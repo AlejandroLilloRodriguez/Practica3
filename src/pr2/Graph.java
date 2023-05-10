@@ -11,9 +11,12 @@ import java.util.*;
         either express or implied. See the License for the specific
         language governing permissions and limitations under the
         License.*/
+@author Alejandro Lillo Rodriguez
 public class Graph<V> {
     private Map<V, Set<V>> adjacencyList = new HashMap<>();
 
+    @param v
+    @return true si el vertice esta añadido, false si ya estaba
     public boolean addVertex(V v) {
         if (adjacencyList.containsKey(v)) {
             return false;
@@ -22,7 +25,8 @@ public class Graph<V> {
             return true;
         }
     }
-
+    @param v1,v2
+    @return true si la arista esta añadida.
     public boolean addEge(V v1, V v2) {
         if (!adjacencyList.containsKey(v1)) {
             adjacencyList.put(v1, new HashSet<>());
@@ -34,6 +38,8 @@ public class Graph<V> {
         adjacencyList.get(v2).add(v1);
         return true;
     }
+    @param v
+    @return true el grupo de vertices adyacentes a v
     public Set<V> obtainAdjacents(V v) throws Exception{
         if(!adjacencyList.containsKey(v)){
             throw new Exception("No existe el vertice que se busca");
