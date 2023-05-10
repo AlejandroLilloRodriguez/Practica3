@@ -47,8 +47,8 @@ public class Graph<V> {
          return adjacencyList.get(v);
 
     }
-    public boolean containsVertex(V v){
-        if (adjacencyList.containsKey(v)) {
+    public boolean containsVertex(V v1){
+        if (adjacencyList.containsKey(v1)) {
             return true;
         } else {
             return false;
