@@ -17,6 +17,28 @@ public class Principal {
 
         public static void main(String[] args) {
             Graph<String> g = new Graph<>();
+            g.addVertex("A");
+            g.addVertex("B");
+            g.addVertex("C");
+            g.addVertex("D");
+            g.addVertex("E");
+            g.addVertex("F");
+            g.addVertex("G");
+            g.addVertex("H");
+            g.addVertex("I");
+            g.addEge("A", "B");
+            g.addEge("A", "C");
+            g.addEge("A", "D");
+            g.addEge("A", "E");
+            g.addEge("A", "F");
+            g.addEge("A", "G");
+            g.addEge("A", "H");
+            g.addEge("A", "I");
+            g.addEge("B", "C");
+            g.addEge("B", "D");
+            g.addEge("B", "E");
+            g.toString();
+
 
         }
 }

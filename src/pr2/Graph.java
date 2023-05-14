@@ -47,6 +47,8 @@ public class Graph<V> {
          return adjacencyList.get(v);
 
     }
+    @param v1
+    @return true si el vertice esta añadido, false si no lo está
     public boolean containsVertex(V v1){
         if (adjacencyList.containsKey(v1)) {
             return true;
@@ -54,9 +56,13 @@ public class Graph<V> {
             return false;
         }
     }
+    @param
+    @return un string con el grafo
     public String toString(){
         return adjacencyList.toString();
     }
+    @param v1,v2
+    @return true si existe la arista entre v1 y v2
     
     public List<V> onePath(V v1,V v2){
         Stack<V> pila = new Stack<>();
