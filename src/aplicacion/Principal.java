@@ -38,6 +38,7 @@ public class Principal {
             g.addEge("B", "D");
             g.addEge("B", "E");
             g.toString();
+            System.out.println(g.toString());
 
 
         }
